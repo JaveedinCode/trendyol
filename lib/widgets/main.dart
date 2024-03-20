@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trendyol/screens/login_screem.dart';
+import 'package:trendyol/screens/login_screen.dart';
 
 void main() => runApp(const MyApp());
 

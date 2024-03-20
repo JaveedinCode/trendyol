@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:trendyol/screens/home_screen.dart';
+import 'package:trendyol/screens/naviagation_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomeScreen(),
+                    builder: (context) => const NavigationPage(),
                   ));
             },
             icon: const FaIcon(FontAwesomeIcons.arrowRightFromBracket),

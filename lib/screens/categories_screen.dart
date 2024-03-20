@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trendyol/data/images.dart';
 import 'package:trendyol/data/images1.dart';
@@ -16,11 +15,15 @@ import 'package:trendyol/data/titles3v2.dart';
 import 'package:trendyol/data/titles4.dart';
 import 'package:trendyol/data/titles4v2.dart';
 import 'package:trendyol/data/titles5.dart';
-import 'package:trendyol/screens/home_screen.dart';
 
-class CategoriesScreen extends StatelessWidget {
+class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});
 
+  @override
+  State<CategoriesScreen> createState() => _CategoriesScreenState();
+}
+
+class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -332,42 +335,6 @@ class CategoriesScreen extends StatelessWidget {
               },
             ),
           ),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.grey,
-        unselectedItemColor: Colors.grey,
-        type: BottomNavigationBarType.fixed,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-              icon: IconButton(
-                  color: Colors.grey,
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
-                        ));
-                  },
-                  icon: const FaIcon(FontAwesomeIcons.house)),
-              label: 'Anasayfa'),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                  onPressed: () {}, icon: const Icon(FontAwesomeIcons.circle)),
-              label: 'Kategoriler'),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.favorite)),
-              label: 'Favoriler'),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                  onPressed: () {},
-                  icon: const FaIcon(FontAwesomeIcons.cartShopping)),
-              label: 'Sepetim'),
-          BottomNavigationBarItem(
-              icon:
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
-              label: 'Anasayfa'),
         ],
       ),
     );

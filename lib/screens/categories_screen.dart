@@ -84,41 +84,36 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                   childAspectRatio: 3, crossAxisCount: 2),
               itemCount: 6,
               itemBuilder: (context, index) {
-                return Row(
-                  children: [
-                    Expanded(
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Row(
+                return Expanded(
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Image.asset(imageList1[index])),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(40),
-                                  child: Image.asset(imageList1[index])),
+                            Text(
+                              titles1[index],
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 13),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  titles1[index],
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13),
-                                ),
-                                Text(
-                                  titles1v2[index],
-                                  style: const TextStyle(fontSize: 12),
-                                )
-                              ],
-                            ),
+                            Text(
+                              titles1v2[index],
+                              style: const TextStyle(fontSize: 12),
+                            )
                           ],
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 );
               },
             ),
@@ -190,41 +185,36 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                   childAspectRatio: 3, crossAxisCount: 2),
               itemCount: 4,
               itemBuilder: (context, index) {
-                return Row(
-                  children: [
-                    Expanded(
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Row(
+                return Expanded(
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Image.asset(imageList3[index])),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(40),
-                                  child: Image.asset(imageList3[index])),
+                            Text(
+                              titles3[index],
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 13),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  titles3[index],
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13),
-                                ),
-                                Text(
-                                  titles3v2[index],
-                                  style: const TextStyle(fontSize: 12),
-                                )
-                              ],
-                            ),
+                            Text(
+                              titles3v2[index],
+                              style: const TextStyle(fontSize: 12),
+                            )
                           ],
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 );
               },
             ),
@@ -247,41 +237,36 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                   childAspectRatio: 3, crossAxisCount: 2),
               itemCount: 6,
               itemBuilder: (context, index) {
-                return Row(
-                  children: [
-                    Expanded(
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Row(
+                return Expanded(
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Image.asset(imageList4[index])),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(40),
-                                  child: Image.asset(imageList4[index])),
+                            Text(
+                              titles4[index],
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 13),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  titles4[index],
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13),
-                                ),
-                                Text(
-                                  titles4v2[index],
-                                  style: const TextStyle(fontSize: 12),
-                                )
-                              ],
-                            ),
+                            Text(
+                              titles4v2[index],
+                              style: const TextStyle(fontSize: 12),
+                            )
                           ],
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 );
               },
             ),
